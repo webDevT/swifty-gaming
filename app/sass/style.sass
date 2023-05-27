@@ -1,8 +1,349 @@
 @import "vars"
 @import "fonts"
 
+//start global style
+body 
+    background: $background-color
+    font-family: $main-font
+    color: #fff
+    font-size: 14px
+    font-weight: 400
+.container-fluid 
+    width: 1120px
+    padding-left: 0 
+    padding-right: 0
+    max-width: 87.200vw
+.h2 
+    font-size: 48px 
+    font-weight: 600
+.h3 
+    font-size: 18px
+    font-weight: 600
+    margin-bottom: 7px
+.text-16 
+    font-size: 16px
+//end  global style
 
+//start header style 
+.header
+    background: rgba(#0C101D, 0.88)
+    position: absolute 
+    top: 0 
+    left: 0 
+    width: 100%
+    .container-fluid 
+        display: flex
+        justify-content: space-between 
+        align-items: center
+.menu 
+    ul 
+        padding: 0 
+        margin: 0
+        display: flex
+        align-items: center
+        list-style: none
+    li 
+        padding-left: 10px 
+        padding-right: 10px
+    a 
+        padding-top: 26px 
+        padding-bottom: 26px
+        padding-left: 20px 
+        padding-right: 20px
+        display: flex 
+        justify-content: center 
+        align-items: center
+        text-decoration: none 
+        color: #fff
+        font-weight: 500
+        border-bottom: 4px solid transparent
+    a:hover,
+    a.active
+        border-bottom: 4px solid #CEA74E
+//end header style
 
+//start main-screen style 
+.main-screen 
+    padding-top: 286px 
+    padding-bottom: 100px
+    background: url('../img/baner.png')
+    background-size: cover
+    background-position: center
+.main-screen__logo 
+    margin-bottom: 20px
+.link,
+.link:hover
+    color: $gold-text 
+    text-decoration: none
+.button--main-screen 
+    margin-top: 60px
+.button 
+    background: $button-background
+    color: #2A334E
+    font-weight: 600
+    font-size: 28px
+    text-decoration: none
+    height: 54px
+    display: flex 
+    justify-content: center 
+    align-items: center
+    width: 280px
+    border-radius: 5px
+.button:hover
+    background: $button-background
+    color: #2A334E
+//end main-screen style 
+
+//start items-section
+.items-section 
+    padding-top: 105px
+    padding-bottom: 60px
+.item 
+    text-align: center
+    background: #252A3D
+    border-radius: 5px  
+    position: relative   
+    min-height: 100%
+    background: linear-gradient(#252A3D 85%, #CEA74E 100%)
+    padding: 3px
+    height: 100%
+.item-wrapper
+    background: $grey
+    height: 100%
+    padding-top: 63px
+    padding-bottom: 45px
+    border-radius: 5px
+    padding-left: 26px 
+    padding-right: 26px
+.item-icon-wrapper 
+    width: 90px 
+    height: 90px 
+    position: absolute 
+    top: 0 
+    left: 50% 
+    transform: translateX(-50%) translateY(-50%)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45)
+    background: linear-gradient(180deg, #13192A 0%, #273B55 100%)
+    border-radius: 50%
+    display: flex 
+    justify-content: center 
+    align-items: center
+    img 
+        max-width: 70%
+//end items-section
+
+//start about style
+.about 
+    padding-top: 60px
+    padding-bottom: 65px
+    background: #0B0D1A
+.about__header 
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    margin-bottom: 106px
+.about-row 
+    display: flex 
+    justify-content: space-between
+    position: relative
+.about-text 
+    width: 508px
+    top: 160px
+    right: 0
+    position: absolute
+.about-image-wrapper
+    position: relative
+.about-image-text
+    font-size: 24px 
+    font-weight: 500
+    color: $gold-text
+    white-space: nowrap
+.text1 
+    position: absolute 
+    top: -18px
+    left: 488px
+.text2
+    position: absolute 
+    top: 107px
+    left: 653px
+.text3
+    position: absolute 
+    top: 385px
+    left: 700px
+.text3
+    position: absolute 
+    top: 385px
+    left: 700px
+.text4
+    position: absolute 
+    top: 449px
+    left: 412px
+.gadgets-mobile
+    display: none
+//end about style
+
+//start about style
+.about-items
+    padding-bottom: 30px
+    background: #0B0D1A
+    .col-lg-4 
+        margin-bottom: 35px
+.about-item
+    background: #252A3D
+    border-radius: 5px
+    padding: 28px
+    height: 200px
+    text-align: center
+    img 
+        margin-bottom: 12px
+    .h3 
+        font-weight: 500
+.text-12 
+    font-size: 12px
+    margin-bottom: 0
+//end about style
+
+// start faq
+.faq 
+    padding-top: 60px 
+    padding-bottom: 60px
+.faq__item
+    background: #2A334E
+    padding: 0 21px
+    border-radius: 5px
+    width: 100%
+    margin-bottom: 16px
+.faq__item.active 
+    background: #252A3D
+    .plus-row:nth-child(2)
+        display: none
+.faq__list 
+    padding-top: 40px
+.faq__item-header 
+    padding-top: 12px 
+    padding-bottom: 12px
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    cursor: pointer
+.plus
+    cursor: pointer
+    width: 14px 
+    height: 14px
+    display: flex 
+    align-items: center
+    justify-content: center
+    position: relative
+    margin-left: 10px
+.plus-row
+    width: 14px 
+    height: 2.63px
+    background: #fff 
+    border-radius: 10px
+.plus-row:nth-child(2)
+    position: absolute 
+    top: 41% 
+    left: 50%
+    transform: translateX(-50%) rotate(90deg)
+.faq__item-content
+    padding-top: 16px 
+    padding-bottom: 16px
+    border-top: 1px solid rgba(255, 255, 255, 0.2)
+    line-height: 200%
+    display: none
+.faq__list
+    display: flex 
+    justify-content: space-between
+.faq__item-col
+    width: 48%
+.faq 
+    .button 
+        margin-top: 30px
+.span-mobile 
+    display: none
+// end faq
+
+//start contact style 
+.contact 
+    padding-top: 60px 
+    padding-bottom: 60px 
+    background: #0D111D
+.input 
+    width: 100%
+    background: #252A3D
+    border-radius: 5px
+    height: 44px
+    border: none
+    margin-bottom: 16px
+    padding: 0 24px
+    font-size: 18px
+    outline: none
+    color: #fff
+.textarea
+    width: 100%
+    background: #252A3D
+    border-radius: 5px
+    height: 224px
+    border: none
+    padding: 0 24px
+    font-size: 18px
+    outline: none
+    color: #fff
+    padding-top: 15px
+.submit-button
+    height: 40px 
+    width: 215px
+    border: none
+    font-size: 16px 
+    font-weight: 500
+.contact-form
+    display: flex 
+    flex-direction: column
+.submit-button
+    align-self: flex-end
+    outline: none
+    margin-top: 30px
+.contact-form 
+    padding-top: 30px
+
+//end contact-style 
+
+//start footer style 
+.footer
+    padding-top: 50px
+    padding-bottom: 50px
+    font-size: 16px
+    .container-fluid 
+        display: flex 
+        justify-content: space-between 
+        align-items: center
+.footer-link,
+.footer-link:hover 
+    color: #C1B493
+    text-decoration: none
+//end footer style 
+
+//start terms 
+.terms-main-screen
+    padding-top: 110px 
+    padding-bottom: 153px
+.footer-alternative 
+    background: #0C101D
+.terms-title 
+    font-size: 28px 
+    font-weight: 600
+    color: #E2C459
+    font-weight: 600
+.terms-main-screen 
+    background: url('../img/term.png')
+    background-position: right
+    background-size: cover
+.terms-content 
+    padding-top: 30px
+    padding-bottom: 30px
+.terms-content 
+    font-size: 14px
+//end terms 
 
 @import "media"
 
